@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import Layout from "../components/Layout";
-import GameBoard from "../components/GameBoard";
-import PlayerStats from "../components/PlayerStats";
-import firebase from "./firebase.js";
+import Layout from "./components/Layout";
+import GameBoard from "./components/GameBoard";
+import PlayerStats from "./components/PlayerStats";
+import db from "./firebase.js";
 
 const Home = () => {
   const [playerStats, setPlayerStats] = useState({});
